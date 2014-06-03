@@ -1,0 +1,13 @@
+AnimalMarketCommon/obj/Debug
+AnimalMarketCommon/obj
+AnimalMarketDal/bin
+AnimalMarketDal/obj
+AnimalMarketEngine/bin
+AnimalMarketCommon/bin
+AnimalMarketEngine/obj
+AnimalMarketService/bin
+AnimalMarketService/obj
+SetupAnimalMarketService/obj
+AnimalMarketEngine/AnimalMarketEngine.csproj.user
+AnimalMarketEngine.v12.suo
+AnimalMarketEngine.v11.suo
