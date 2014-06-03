@@ -11,3 +11,8 @@ SetupAnimalMarketService/obj
 AnimalMarketEngine/AnimalMarketEngine.csproj.user
 AnimalMarketEngine.v12.suo
 AnimalMarketEngine.v11.suo
+SignalREngine/bin
+SignalREngine/obj
+SignalREngineServiceWindowsService/bin
+SignalREngineServiceWindowsService/obj
+SignalRWindowsServiceExample.v12.suo
