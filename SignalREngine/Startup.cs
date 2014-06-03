@@ -1,4 +1,3 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
@@ -7,7 +6,6 @@ using Microsoft.Owin.Cors;
 using Microsoft.Owin.Hosting;
 using Owin;
 using SignalREngine;
-using SignalREngine.Dto;
 
 [assembly: OwinStartup(typeof(Startup))]
 
@@ -24,7 +22,6 @@ namespace SignalREngine
             Task.Factory.StartNew(RunSignalRServer, TaskCreationOptions.LongRunning
                                   , cancellationTokenSource.Token);  
         }
-
 
         private static void RunSignalRServer(object task)
         {
