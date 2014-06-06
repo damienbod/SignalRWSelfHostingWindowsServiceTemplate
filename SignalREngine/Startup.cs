@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
@@ -14,7 +15,7 @@ namespace SignalREngine
     public class Startup
     {
         static CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
-
+        private static IDisposable _runningInstance;
         // Your startup logic
         public static void StartServer()
         {
@@ -26,12 +27,13 @@ namespace SignalREngine
         private static void RunSignalRServer(object task)
         {
             string url = "http://localhost:8089";
-            WebApp.Start(url);
+            _runningInstance = WebApp.Start(url);
         }
 
         public static void StopServer()
         {
             _cancellationTokenSource.Cancel();
+            _runningInstance.Dispose();
         }
 
         // This code configures Web API. The Startup class is specified as a type
